@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+.darkmode {
+    background-color: #000;
+    color: #fff;
+}
 
 main {
     display: flex;
@@ -13,9 +17,8 @@ main {
     align-content: center;
 }
 
-nav {
+header {
     position: fixed;
-
 }
 
 main h2 {
@@ -26,9 +29,9 @@ main h2 {
 }
 
 .cardgrid {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap:50px;
+    gap: 50px;
 }
 
 .card {
@@ -40,14 +43,14 @@ main h2 {
     border-radius: .3rem;
 }
 
-@media only screen and (max-width:550px)  {
-.cardgrid {
-    grid-template-columns: repeat(2, 1fr);
-}
+@media only screen and (max-width:550px) {
+    .cardgrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@media only screen and (max-width:415px)  {
+@media only screen and (max-width:415px) {
     .cardgrid {
         grid-template-columns: repeat(1, 1fr);
     }
-    }
+}
