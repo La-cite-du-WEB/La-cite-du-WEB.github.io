@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="../assets/styles/style.css">
 
-        <title>OnlyCat - About Us</title>
-    </head>
+    <title>OnlyCat - About Us</title>
 
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <span class="emoji">🔥</span>Hot
-                    </li>
-                    <li>
-                        <span class="emoji">❔</span>Quiz
-                    </li>
-                    <li>
-                        <span class="emoji">🔵</span>About
-                    </li>
-                </ul>
-            </nav>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
 
-            <button id="darkmode-button">Dark Mode</button>
-        </header>
+<body>
+    <header>
+        <nav>
 
-        <main>
-            <h2>🔵 About 🔵</h2>
-            <img src="../assets/imgs/branding/only_cat.webp" style="border-radius: 10px; float: left;">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum labore voluptate corrupti ullam ratione,
-                iusto eos explicabo facere dolorem molestias iure tempore consequuntur. Hic, ex! Aliquid temporibus
-                incidunt et repellendus?</p>
-            <img id="mascotte" src="../assets/imgs/branding/mascot.webp" width="300px" height="300px">
+            <div class="nav-element">
+                <iconify-icon icon="ph:fire-simple-light" width="32" height="32"></iconify-icon>
+                <span>Hot</span>
+            </div>
 
-        </main>
-    </body>
+            <div class="nav-element">
+                <iconify-icon icon="ph:seal-question-light" width="32" height="32"></iconify-icon></iconify-icon>
+                <span>Quiz</span>
+            </div>
+
+            <div class="nav-element">
+                <iconify-icon icon="ph:info-light" width="32" height="32"></iconify-icon>
+                <span>About</span>
+            </div>
+            <div class="nav-element">
+                <iconify-icon icon="ph:sun-light" width="32" height="32"></iconify-icon>
+                <span><button id="darkmode-button">Dark Mode</button></span>
+            </div>
+
+        </nav>
+
+
+    </header>
+
+    <main>
+        <h2>🔵 About 🔵</h2>
+        <img src="../assets/imgs/branding/only_cat.webp" style="border-radius: 10px; float: left;">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum labore voluptate corrupti ullam ratione,
+            iusto eos explicabo facere dolorem molestias iure tempore consequuntur. Hic, ex! Aliquid temporibus
+            incidunt et repellendus?</p>
+        <img id="mascotte" src="../assets/imgs/branding/mascot.webp" width="300px" height="300px">
+
+    </main>
+
+    <script src="../assets/scripts/darkmode.js"></script>
+</body>
 
 </html>
