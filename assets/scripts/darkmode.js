@@ -1,7 +1,21 @@
-const darkmodeButton = document.querySelector('#darkmode-button');
-let darkmodeState = false;
+const darkmode = () => {
+  if (localStorage.getItem('darkmode') === 'true') {
+    document.querySelector('body').classList.add('darkmode');
 
-darkmodeButton.addEventListener('click', () => {
-  darkmodeState ? document.body.classList.remove('darkmode') : document.body.classList.add('darkmode');
-  darkmodeState = !darkmodeState;
+  } else {
+    document.querySelector('body').classList.remove('darkmode');
+  }
+};
+
+darkmode();
+
+document.querySelector('#darkmode-button').addEventListener('click', () => {
+  if (localStorage.getItem('darkmode') === 'false') {
+    localStorage.setItem('darkmode', 'true');
+
+  } else {
+    localStorage.setItem('darkmode', 'false');
+  }
+
+  darkmode();
 });
