@@ -7,30 +7,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/styles/style.css">
         <title>OnlyCat - Home</title>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     </head>
 
     <body>
+        <script defer src="assets/scripts/darkmode.js"></script>
         <header>
             <nav>
-                <ul>
-                    <li>
-                        <span class="emoji">🔥</span>Hot
-                    </li>
-                    <li>
-                        <span class="emoji">❔</span>Quiz
-                    </li>
-                    <li>
-                        <span class="emoji">🔵</span>About
-                    </li>
-                </ul>
-            </nav>
+                
+                <div class="nav-element">
+                    <iconify-icon icon="ph:fire-simple-light" width="32" height="32"></iconify-icon>
+                    <span>Hot</span>
+                </div>
 
-            <button id="darkmode-button">Dark Mode</button>
+                <div class="nav-element">
+                    <iconify-icon icon="ph:seal-question-light" width="32" height="32"></iconify-icon></iconify-icon>
+                    <span>Quiz</span>
+                </div>
+
+                <div class="nav-element">
+                    <iconify-icon icon="ph:info-light" width="32" height="32"></iconify-icon>
+                    <span>About</span>
+                </div>
+                <div class="nav-element">
+                    <iconify-icon icon="ph:sun-light" width="32" height="32"></iconify-icon>
+                    <span><button id="darkmode-button">Dark Mode</button></span>
+                </div>
+                
+            </nav>
+            
         </header>
 
         <main>
-            <h2>🔥 HOT 🔥</h2>
+            <h2><iconify-icon icon="emojione:fire"></iconify-icon> HOT <iconify-icon icon="emojione:fire"></iconify-icon></h2>
             <div class="cardgrid">
+                
                 <div class="card"></div>
                 <div class="card"></div>
                 <div class="card"></div>
@@ -46,7 +57,7 @@
             </div>
         </main>
 
-        <script src="assets/scripts/darkmode.js"></script>
+        
     </body>
 
 </html>
