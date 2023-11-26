@@ -10,11 +10,10 @@ const darkmode = () => {
     document.querySelector('body').classList.remove('darkmode');
     document.querySelector('#darkmode-button span').textContent = "Dark Mode";
     document.querySelector('body').style.display = "none";
-    setTimeout(() => {document.querySelector('body').style.display = "block";}, 200);
+    setTimeout(() => {
+      document.querySelector('body').style.display = "block";
+    }, 200);
     document.querySelector("#darkmode-button iconify-icon").icon = "ph:moon-light";
-    
-    
-
   }
 };
 
@@ -27,7 +26,5 @@ document.querySelector('#darkmode-button').addEventListener('click', () => {
   } else {
     audio.play();
     localStorage.setItem('darkmode', 'false');
-  }
-
-  darkmode();
+  } darkmode();
 });

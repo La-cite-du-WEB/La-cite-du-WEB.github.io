@@ -77,6 +77,10 @@ main h2 {
     border-radius: 0.3rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 @media(max-width: 1000px) {
     .cardgrid {
         gap: 10px;
