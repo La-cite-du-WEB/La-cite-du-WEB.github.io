@@ -104,7 +104,7 @@ a {
 }
 
 .creator-header-info {
-    padding: 10px;
+    padding-left: 10px;
 }
 
 .creator-header-info-name {
@@ -133,7 +133,6 @@ a {
     border-radius: 50%;
     border: 2px solid #fff;
     margin: 10px;
-
 }
 .icon-bar {
     position:absolute;
