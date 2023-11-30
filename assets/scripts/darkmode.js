@@ -1,4 +1,4 @@
-const audio = new Audio("assets/sfx/flashbang.mp3");
+const audio = new Audio("../assets/sfx/flashbang.mp3");
 
 const darkmode = () => {
   if (localStorage.getItem('darkmode') === 'true') {
