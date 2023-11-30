@@ -28,6 +28,7 @@ nav {
     grid-template-rows: repeat(1fr, 3);
     user-select: none;
 }
+
 .nav-element {
     display: flex;
     flex-direction: row;
@@ -79,6 +80,53 @@ main h2 {
 
 a {
     text-decoration: none;
+}
+
+.creator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    border: 1px solid #8a96a3;
+    border-top: none;
+}
+
+.creator-banner {
+    width: 700px;
+    margin-top: -130px;
+    margin-bottom: -60px;
+}
+
+.creator-header-info {
+    padding: 10px;
+}
+
+.creator-header-info-name {
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 500;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.creator-header-info-desc {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.creator-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin: 10px;
 }
 
 @media(max-width: 1000px) {
