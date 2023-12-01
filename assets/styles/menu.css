@@ -1,0 +1,39 @@
+header {
+    position: fixed;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: repeat(1fr, 3);
+    user-select: none;
+}
+
+.nav-element {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    height: 48px;
+    color: #8a96a3;
+    padding-inline: 20px;
+    transition: background-color 0.1s ease-in-out;
+    border-radius: 500em;
+}
+
+.nav-element:hover {
+    background-color: hsla(203, 100%, 46%, 25%);
+}
+
+header span {
+    margin-left: 21px;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
