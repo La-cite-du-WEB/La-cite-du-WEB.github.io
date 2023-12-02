@@ -1,236 +1,250 @@
 #creator {
-    display: flex;
-    flex-direction: column;
-    border: 0.8px solid #8a96a3;
-    border-top: none;
+  display: flex;
+  flex-direction: column;
+  border: 0.8px solid #8a96a3;
+  border-top: none;
 }
 
 #creator-header, #creator-body, #creator-footer {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 #creator-header-banner {
-    width: 700px;
-    height: 350px;
-    margin-bottom: -60px;
-    background-image: url("../../assets/imgs/cats/color/black/2.webp");
+  width: 700px;
+  height: 350px;
+  margin-bottom: -60px;
+  background-image: url("../../assets/imgs/cats/color/black/2.webp");
 }
 
 #creator-header-banner-top {
-    backdrop-filter: blur(3px);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px;
-    color: #fff;
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
 }
 
 #creator-header-banner-top-icon-1 {
-    margin-right: 10px;
-    cursor: pointer;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 #creator-header-banner-top div {
-    flex: 1;
+  flex: 1;
 }
 
 #creator-header-banner-top-name {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
 }
 
 #creator-header-banner-top-name iconify-icon {
-    margin-left: 3px;
-    margin-top: 2px;
+  margin-left: 3px;
+  margin-top: 2px;
 }
 
 #creator-header-banner-top-stats {
-    margin-top: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
 }
 
 .stats-icon {
-    margin-right: 5px;
+  margin-right: 5px;
 
 }
 
 .dot-icon {
-    margin-inline: 8px;
+  margin-inline: 8px;
 }
 
 #creator-header-banner-top-icon-2 {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #creator-header-info {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 #creator-header-info img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    margin-top: 20px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-top: 20px;
 }
 
 #creator-header-info-name {
-    font-size: 19px;
-    line-height: 24px;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
 }
 
 #creator-header-info-id {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;
-    color: #8a96a3;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: #8a96a3;
 }
 
 #creator-header-info-name iconify-icon {
-    margin-left: 3px;
-    margin-top: 2px;
+  margin-left: 3px;
+  margin-top: 2px;
 }
 
 #creator-header-info-desc {
-    margin-top: 10px;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
 }
 
 #creator-subscription {
-    border-top: 0.8px solid #8a96a3;
-    padding: 20px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: 200;
-    font-family: 'Roboto', sans-serif;
-    color: #8a96a3;
+  border-top: 0.8px solid #8a96a3;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 200;
+  font-family: 'Roboto', sans-serif;
+  color: #8a96a3;
 }
 
 #creator-subscription-button {
-    background-color: #00aff0;
-    color: #fff;
-    border: none;
-    border-radius: 50px;
-    padding: 16px;
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 10px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
+  background-color: #00aff0;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 16px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
 }
 
 #creator-subscription-button:hover {
-    background-color: #0091d6;
-    transition: background-color 0.1s ease-in-out;
+  background-color: #0091d6;
+  transition: background-color 0.1s ease-in-out;
 }
 
 #creator-subscription-text {
-    flex: 1;
+  flex: 1;
 }
 
 .spaccer {
-    padding: 10px;
-    border-top: 0.8px solid #8a96a3;
-    background-color: #f6f7f8;
+  padding: 10px;
+  border-top: 0.8px solid #8a96a3;
+  background-color: #f6f7f8;
 }
 
 #creator-body {
-    padding: 20px;
-    border-top: 0.8px solid #8a96a3;
+  padding: 20px;
+  border-top: 0.8px solid #8a96a3;
 }
 
 .cardgrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 660px;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 660px;
+  gap: 10px;
 }
 
 .card {
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  height: 200px;
+  animation: scale-in-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .card:hover {
-    transform: scale(1.15);
-    transition: transform 0.2s ease-in-out;
+  transform: scale(1.15);
+  transition: transform 0.2s ease-in-out;
 }
 
 #expanded {
-    backdrop-filter: blur(3px);
-    display: none;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    text-align: center;
-    animation: scale-up-ver-top 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  backdrop-filter: blur(3px);
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  animation: scale-up-ver-top 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 #expanded-image {
-    height: 100%;
-    object-fit: cover;
-    margin-block: auto;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  object-fit: cover;
+  margin-block: auto;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes scale-up-ver-top {
-    0% {
-        -webkit-transform: scaleY(0.4);
-        transform: scaleY(0.4);
-        -webkit-transform-origin: 100% 0%;
-        transform-origin: 100% 0%;
-    }
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
 
-    100% {
-        -webkit-transform: scaleY(1);
-        transform: scaleY(1);
-        -webkit-transform-origin: 100% 0%;
-        transform-origin: 100% 0%;
-    }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
 }
 
 @keyframes scale-out-ver-top {
-    0% {
-        -webkit-transform: scaleY(1);
-        transform: scaleY(1);
-        -webkit-transform-origin: 100% 0%;
-        transform-origin: 100% 0%;
-        opacity: 1;
-    }
+  0% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
 
-    100% {
-        -webkit-transform: scaleY(0);
-        transform: scaleY(0);
-        -webkit-transform-origin: 100% 0%;
-        transform-origin: 100% 0%;
-        opacity: 1;
-    }
+  100% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
 }
