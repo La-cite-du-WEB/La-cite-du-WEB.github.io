@@ -17,3 +17,8 @@ p {
     float: right;
     margin-right: 20px;
 }
+
+div {
+    margin-left: 200px;
+    margin-right: 200px;
+}
