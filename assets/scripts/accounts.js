@@ -3,21 +3,26 @@
 export const accounts = [
     {
         name: "Mia Catifa",
-        breed: 'beng'
+        breed: 'beng',
+        logo: '../../assets/imgs/cats/color/black/1.webp'
     },
     {
         name: "Catty Delphine",
-        breed: 'ragd'
+        breed: 'ragd',
+        logo: '../../assets/imgs/cats/color/black/1.webp'
     },
     {
         name: "Cat y Pery",
-        breed: 'norw'
+        breed: 'norw',
+        logo: '../../assets/imgs/cats/color/black/1.webp'
     },
     {
         name: "Catty Redwolf",
-        breed: 'munc'
+        breed: 'munc',
+        logo: '../../assets/imgs/cats/color/black/1.webp'
     }, {
         name: "Catty Michelle",
-        breed: 'ocic'
+        breed: 'ocic',
+        logo: '../../assets/imgs/cats/color/black/1.webp'
     }
 ]

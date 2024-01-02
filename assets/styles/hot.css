@@ -1,79 +1,95 @@
 .cardgrid {
     display: grid;
-    min-width: 80%;
-    grid-template-columns: repeat(3, 1fr);
+    /* min-width: 80%; */
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     transition: gap 300ms ease-in-out;
 }
 
 .card {
+    display: grid;
+    grid-template-rows: 0.45fr 2fr 0.35fr;
+    padding-inline: 20px;
+    padding-block: 10px;
     position: relative;
-    background-color: antiquewhite;
-    min-width: 250px;
-    /* width: 100%; */
+    background-color: hsl(0, 0%, 93%);
+    width: 250px;
     height: 250px;
-    max-width: 550px;
     border-radius: 0.3rem;
 
-    background-image: url("https://source.unsplash.com/1920x1820/?cat");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
 }
 
-.icon-bar {
-    position:absolute;
+.card-header {
+    position: relative;
     display: flex;
-    bottom: 0;
-    width: 100%;
-    height: 15%;
-    background-color: hsla(0, 0%, 97%, 00);
-    border-radius: 0.3rem;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    transform: translateY(50px);
-    transition: all ease-in-out .2s;
 }
 
-.icon-bar iconify-icon:hover {
-    color: hsl(0, 69%, 59%) !important;
-}
-
-.icon-bar span {
+.card-creator-name {
+    color: black;
+    font-size: 1.2em;
     font-family: 'Roboto', sans-serif;
-    font-size: larger;
 }
 
-.icon-bar iconify-icon {
+.card-creator-logo {
     position: absolute;
-    left: 10px;
-    transition: color ease-in-out 200ms;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50em;
+    /* background-image: url("https://source.unsplash.com/600x600/?cat"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.icon-bar > * {
-    color: hsla(0, 45%, 97%,0);
-    transition: color ease-in-out .2s;
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+    gap: 10px;
 }
 
-.card:hover .icon-bar > * {
-    color: hsla(0, 45%, 97%,1);
-    
+.card-footer > * {
+    font-size: 1.7em;
+    color: #8a96a3;
+    transition: color ease-in-out 0.15s;
 }
 
-.card:hover .icon-bar {
-    background-color: hsla(0, 0%, 10%, 25%);
-    transform: translateY(0px);
+.card-footer iconify-icon:hover {
+    color: var(--hover-color);
 }
 
-@media(max-width: 1000px) {
+.card-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.2em;
+    /* background-image: url("https://source.unsplash.com/1920x1820/?cat"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media(max-width: 1200px) {
+    .cardgrid {
+        gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 900px) {
     .cardgrid {
         gap: 10px;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media(max-width: 700px) {
+@media(max-width: 615px) {
     .cardgrid {
         gap: 5px;
         grid-template-columns: repeat(1, 1fr);

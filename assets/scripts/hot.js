@@ -3,18 +3,54 @@ import {accounts} from "./accounts.js"
 
 console.log(accounts)
 
-const addCard = (account_name, imageurl) => {
-    let newcard = document.createElement('div', );
-    newcard.classList.add("card");
-    newcard.style.backgroundImage = `url('${imageurl}')`;
-    newcard.innerHTML = `
-<div class="icon-bar">
-        <iconify-icon icon="ph:heart-fill" width="32" height="32"></iconify-icon>
-    <span>${account_name}</span>
-</div>  
-`
-    cardgrid.appendChild(newcard);
+function addCard(account_name, account_logo_url, image_url) {
+  var card = document.createElement("div");
+  card.className = "card";
+
+  var cardHeader = document.createElement("div");
+  cardHeader.className = "card-header";
+
+  var cardCreatorLogo = document.createElement("div");
+  cardCreatorLogo.className = "card-creator-logo";
+  cardCreatorLogo.style.backgroundImage = "url('" + account_logo_url + "')";
+
+  var cardCreatorName = document.createElement("div");
+  cardCreatorName.className = "card-creator-name";
+  var span = document.createElement("span");
+  span.textContent = account_name;
+  cardCreatorName.appendChild(span);
+
+
+  cardHeader.appendChild(cardCreatorLogo);
+  cardHeader.appendChild(cardCreatorName);
+
+  var cardImage = document.createElement("div");
+  cardImage.className = "card-image";
+  cardImage.style.backgroundImage = "url('" + image_url + "')";
+
+
+  var cardFooter = document.createElement("div");
+  cardFooter.className = "card-footer";
+
+  var heartIcon = document.createElement("iconify-icon");
+  heartIcon.setAttribute("style", "--hover-color:hsl(0, 69%, 59%);");
+  heartIcon.setAttribute("icon", "ph:heart-fill");
+
+  var cartIcon = document.createElement("iconify-icon");
+  cartIcon.setAttribute("style", "--hover-color:hsl(239, 69%, 59%);");
+  cartIcon.setAttribute("icon", "ph:shopping-cart-simple-fill");
+
+  cardFooter.appendChild(heartIcon);
+  cardFooter.appendChild(cartIcon);
+
+
+  card.appendChild(cardHeader);
+  card.appendChild(cardImage);
+  card.appendChild(cardFooter);
+
+  cardgrid.appendChild(card);
 }
+
 
 const scrollProgress = () => {
   let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -38,15 +74,15 @@ const fetchImages = (n) => {
 
     fetch(`https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&order=RANDOM&page=0&limit=1&breed=${account.breed}`, requestOptions)
     .then(response => response.json())
-    .then(result => addCard(account.name, result[0]['url']))
+    .then(result => addCard(account.name, account.logo,result[0]['url']))
     .catch(error => console.log('error', error));
   }
 }
 
-fetchImages(20);
+fetchImages(25);
 
 document.addEventListener("scroll", () => {
-  if (scrollProgress() > 75) {
+  if (scrollProgress() > 90) {
     fetchImages(7)
   }
 });
