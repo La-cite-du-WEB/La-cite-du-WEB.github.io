@@ -1,5 +1,5 @@
 // possible breed ids: beng, ragd, norw, munc, ocic
-
+// TODO: Get a different logo for each accounts
 export const accounts = [
     {
         name: "Mia Catifa",
