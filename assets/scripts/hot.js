@@ -3,9 +3,10 @@ import {accounts} from "./accounts.js"
 
 console.log(accounts)
 
-function addCard(account_name, account_logo_url, image_url) {
+function addCard(account_name,account_username, account_logo_url, image_url) {
   var card = document.createElement("div");
   card.className = "card";
+  card.setAttribute("username", account_username)
 
   var cardHeader = document.createElement("div");
   cardHeader.className = "card-header";
@@ -74,15 +75,29 @@ const fetchImages = (n) => {
 
     fetch(`https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&order=RANDOM&page=0&limit=1&breed=${account.breed}`, requestOptions)
     .then(response => response.json())
-    .then(result => addCard(account.name, account.logo,result[0]['url']))
+    .then(result => addCard(account.name,account.username,account.logo,result[0]['url']))
     .catch(error => console.log('error', error));
   }
 }
 
-fetchImages(25);
 
 document.addEventListener("scroll", () => {
   if (scrollProgress() > 90) {
     fetchImages(7)
   }
 });
+
+
+document.addEventListener("click", (event) => {
+  const target = event.target;
+  var clicked_card = undefined;
+  if (target.className.slice(0, 4) != "card" || target.tagName == "ICONIFY-ICON") return;
+
+
+  clicked_card = document.elementsFromPoint(event.x,event.y).filter(e => {return e.className == "card"})[0]
+  window.location.href = `pages/creators/${clicked_card.getAttribute("username")}.html`;
+  
+})
+
+
+fetchImages(25);
