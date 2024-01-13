@@ -4,7 +4,7 @@ export const accounts = [
     {
         name: "Mia Catifa",
         username: "mia_catifa",
-        breed: 'beng',
+        breed: 'bomb',
         logo: '../../assets/imgs/cats/color/black/1.webp'
     },
     {
