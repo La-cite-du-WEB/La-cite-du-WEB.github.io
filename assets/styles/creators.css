@@ -13,7 +13,6 @@
   width: 700px;
   height: 350px;
   margin-bottom: -60px;
-  background-image: url("../../assets/imgs/cats/color/black/2.webp");
 }
 
 #creator-header-banner-top {
@@ -173,6 +172,13 @@
   overflow: hidden;
   cursor: pointer;
   height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  object-fit: cover;
+  height: 100%;
 }
 
 .card:hover {
@@ -232,5 +238,27 @@
     -webkit-transform-origin: 100% 0%;
     transform-origin: 100% 0%;
     opacity: 1;
+  }
+}
+
+@media(max-width: 1200px) {
+  .cardgrid {
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(max-width: 660px) {
+  .cardgrid {
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 400px) {
+  .cardgrid {
+    gap: 5px;
+    grid-template-columns: repeat(1, 1fr);
+
   }
 }
