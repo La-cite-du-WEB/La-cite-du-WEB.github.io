@@ -5,7 +5,7 @@ export const accounts = [
         name: "Mia Catifa",
         username: "mia_catifa",
         breed: 'bomb',
-        logo: '../../assets/imgs/cats/color/black/1.webp'
+        logo: '../../assets/imgs/cats/color/bomb/1.webp'
     },
     {
         name: "Catty Delphine",
