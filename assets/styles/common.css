@@ -5,16 +5,21 @@
     padding: 0;
 }
 
+:root {
+    --primary-background: hsl(214, 7%, 09%);
+    --secondary-background: hsl(214, 7%, 14%);
+    --primary-text: white
+}
+
+body {
+    background-color: var(--primary-background);
+    color:var(--primary-text)
+}
+
 main h2 {
     margin-block: 90px;
     font-size: 3.5em;
     font-family: 'Agbalumo', sans-serif;
-
-}
-
-.darkmode {
-    background-color: hsl(214, 7%, 09%);
-    color: #fff;
 }
 
 main {
@@ -22,4 +27,17 @@ main {
     flex-direction: column;
     align-items: center;
     align-content: center;
+}
+
+
+[theme-override='Dark'] {
+    --primary-background: hsl(214, 7%, 09%);
+    --secondary-background: hsl(214, 7%, 14%);
+    --primary-text: white
+}
+
+[theme-override='Light'] {
+    --primary-background: hsl(214, 7%, 98%);
+    --secondary-background: hsl(214, 7%, 90%);
+    --primary-text: black
 }

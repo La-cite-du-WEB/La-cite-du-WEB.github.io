@@ -12,11 +12,10 @@
     padding-inline: 20px;
     padding-block: 10px;
     position: relative;
-    background-color: hsl(0, 0%, 93%);
+    background-color: var(--secondary-background);
     width: 250px;
     height: 250px;
     border-radius: 0.3rem;
-
 }
 
 .card-header {
@@ -28,7 +27,7 @@
 }
 
 .card-creator-name {
-    color: black;
+    /* color: var(--primary); */
     font-size: 1.2em;
     font-family: 'Roboto', sans-serif;
 }
@@ -57,7 +56,7 @@
 .card-footer > * {
     font-size: 1.7em;
     color: #8a96a3;
-    transition: color ease-in-out 0.15s;
+    transition: all ease-in-out 0.15s;
 }
 
 .card-footer iconify-icon:hover {
@@ -72,9 +71,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    z-index: 1;
+    transition: transform ease-in 0.15s;
 }
 
+.card-image:hover {
+    z-index: 2;
+    transform: scale(115%);
+}
 
+  
 @media(max-width: 1200px) {
     .cardgrid {
         gap: 5px;

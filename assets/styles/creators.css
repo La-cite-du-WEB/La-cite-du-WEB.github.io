@@ -6,7 +6,7 @@
 }
 
 #creator-header, #creator-body, #creator-footer {
-  background-color: #fff;
+  background-color: var(--primary-background);
 }
 
 #creator-header-banner {
@@ -75,7 +75,7 @@
   height: 80px;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid var(--primary-background);
   margin-top: 20px;
 }
 
@@ -152,7 +152,7 @@
 .spaccer {
   padding: 10px;
   border-top: 0.8px solid #8a96a3;
-  background-color: #f6f7f8;
+  /* background-color: #f6f7f8; */
 }
 
 #creator-body {
