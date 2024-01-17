@@ -19,6 +19,7 @@ function getImage() {
   console.log(name);
 
   img.src = `../../assets/imgs/cats/color/${color}/${Math.floor(Math.random() * 10) + 1}.webp`;
+  console.log(img.src);
 }
 
 // Check if answer is correct
