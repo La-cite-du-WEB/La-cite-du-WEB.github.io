@@ -13,7 +13,7 @@ document.getElementById("darkmode-button").addEventListener('click', () => {
   document.querySelector('#darkmode-button span').textContent = texts[other_theme];
   document.querySelector("#darkmode-button iconify-icon").icon = icons[other_theme];
   localStorage.setItem('theme-override', themes[other_theme]);
-  // if the actual theme is dark that means we switched to light mod
+  // if the actual theme is dark that means we switched to light mode
   if (actual_theme === 'Dark') {
     audio.play();
     document.querySelector('body').style.display = "none";
