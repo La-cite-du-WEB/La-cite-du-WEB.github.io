@@ -18,7 +18,7 @@ function getImage() {
   name = accounts.find(account => account.breed === color).name;
   console.log(name);
 
-  img.src = `../../assets/imgs/cats/color/${color}/${Math.floor(Math.random() * 10) + 1}.webp`;
+  img.src = `/assets/imgs/cats/color/${color}/${Math.floor(Math.random() * 10) + 1}.webp`;
   console.log(img.src);
 }
 
