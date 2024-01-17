@@ -23,7 +23,7 @@ document.getElementById("darkmode-button").addEventListener('click', () => {
   }
 
 });
-
+// autoRun, runs on script load
 (() =>{
   console.log(themes[+(window.matchMedia("(prefers-color-scheme: dark)").matches)])
   let saved_theme = localStorage.getItem('theme-override')

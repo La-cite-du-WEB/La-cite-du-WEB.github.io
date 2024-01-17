@@ -8,7 +8,7 @@
 :root {
     --primary-background: hsl(214, 7%, 09%);
     --secondary-background: hsl(214, 7%, 14%);
-    --primary-text: white
+    --primary-text: white;
 }
 
 body {
@@ -20,6 +20,7 @@ main h2 {
     margin-block: 90px;
     font-size: 3.5em;
     font-family: 'Agbalumo', sans-serif;
+    user-select: none;
 }
 
 main {
