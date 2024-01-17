@@ -5,7 +5,7 @@ import { accounts } from "./accounts.js";
 let name;
 
 // DOM elements
-const img = document.querySelector('#question img');
+const img = document.querySelector('#img');
 const answer = document.querySelector('#question input');
 const submit = document.querySelector('#question button');
 
@@ -18,7 +18,7 @@ function getImage() {
   name = accounts.find(account => account.breed === color).name;
   console.log(name);
 
-  img.src = `../assets/imgs/cats/color/${color}/${Math.floor(Math.random() * 10) + 1}.webp`;
+  img.src = `../../assets/imgs/cats/color/${color}/${Math.floor(Math.random() * 10) + 1}.webp`;
   console.log(img.src);
 }
 
