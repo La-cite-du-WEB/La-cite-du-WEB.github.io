@@ -102,7 +102,7 @@ document.addEventListener("click", (event) => {
 
 
   clicked_card = document.elementsFromPoint(event.x,event.y).filter(e => {return e.className == "card"})[0]
-  window.location.href = `pages/creators/${clicked_card.getAttribute("username")}.html`;
+  window.location.href = `/pages/creators/${clicked_card.getAttribute("username")}.html`;
   
 })
 

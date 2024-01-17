@@ -1,5 +1,5 @@
 function showImage(color, img) {
-  document.querySelector('#expanded-image').src = `../../assets/imgs/cats/color/${color}/${img}.webp`;
+  document.querySelector('#expanded-image').src = `/assets/imgs/cats/color/${color}/${img}.webp`;
   document.querySelector('#expanded').style.display = 'block';
 
   document.querySelector('#expanded').addEventListener('click', () => {

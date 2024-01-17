@@ -1,4 +1,4 @@
-const audio = new Audio("assets/sfx/flashbang.mp3");
+const audio = new Audio("/assets/sfx/flashbang.mp3");
 const themes = ['Dark', 'Light'];
 const texts = ['Flash Bang', 'Dark Mode'];
 const icons = ['ph:sun-light', 'ph:moon-light'];
