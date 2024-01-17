@@ -5,7 +5,7 @@ import { accounts } from "./accounts.js";
 let name;
 
 // DOM elements
-const img = document.querySelector('#img');
+const img = document.querySelector('#question img');
 const answer = document.querySelector('#question input');
 const submit = document.querySelector('#question button');
 
