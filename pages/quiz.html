@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/styles/common.css">
     <link rel="stylesheet" href="../assets/styles/menu.css">
+    <link rel="stylesheet" href="../assets/styles/quiz.css">
 
-    <title>OnlyCat - Quizz</title>
+    <title>OnlyCat - Quiz</title>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   </head>
 
   <body>
     <script defer src="../assets/scripts/darkmode.js"></script>
+    <script defer type="module" src="../assets/scripts/quiz.js"></script>
     <header>
       <nav>
         <a href="../index.html">
@@ -49,6 +51,12 @@
           icon="noto:red-question-mark"></iconify-icon></h2>
 
       <h3>Find the name of the creator</h3>
+
+      <div id="question">
+        <img>
+        <input type="text" placeholder="Enter answer here">
+        <button>Submit !</button>
+      </div>
     </main>
   </body>
 

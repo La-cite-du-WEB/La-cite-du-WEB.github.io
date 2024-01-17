@@ -1,0 +1,48 @@
+h3 {
+  font-size: 2.5em;
+  font-family: 'Agbalumo', sans-serif;
+  user-select: none;
+}
+
+img {
+  margin-block: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1em;
+}
+
+input {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-text);
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: none;
+  border: 1px solid #757575;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+}
+
+button {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: #00aff0;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  width: 50%;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
